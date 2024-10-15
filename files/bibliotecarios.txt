@@ -1,0 +1,4 @@
+B;Caio;12345;caio@mail.com;19025-575
+D;Silmarilion;J.R.R. Tolkien;HarperCollins;pdf;1000
+D;O Hobbit;J.R.R. Tolkien;HarperCollins;pdf;1000
+F;Os filhos de Húrin;J.R.R. Tolkien;HarperCollins;0.5;200
