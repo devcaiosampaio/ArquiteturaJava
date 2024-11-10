@@ -1,0 +1,357 @@
+{
+	"info": {
+		"_postman_id": "891d1988-2cc1-4736-a1dc-4cec01b22b19",
+		"name": "caio.sampaio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34710920"
+	},
+	"item": [
+		{
+			"name": "bibliotecario",
+			"item": [
+				{
+					"name": "obterLista",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "incluir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"paulinho\",\r\n    \"cpf\": \"345345345345\",\r\n    \"email\": \"paulinh@moraes.com\",\r\n    \"endereco\": {\r\n        \"cep\": \"01001-000\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/vendedores/incluir",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vendedores",
+								"incluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/vendedores/2/excluir",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vendedores",
+								"2",
+								"excluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obterPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/bibliotecarios/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bibliotecarios",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscarPorNome",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/vendedores/buscar/moraes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vendedores",
+								"buscar",
+								"moraes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "publicacao",
+			"item": [
+				{
+					"name": "filtrarPorAutor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/publicacoes/filtrarPorAutor?autor=Tol",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"publicacoes",
+								"filtrarPorAutor"
+							],
+							"query": [
+								{
+									"key": "autor",
+									"value": "Tol"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/produto/2/excluir",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"produto",
+								"2",
+								"excluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obterPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/produto/123",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"produto",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obterLista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/lista/produto",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"lista",
+								"produto"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "livro-digital",
+			"item": [
+				{
+					"name": "incluir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\t\"descricao\": \"sopa\",\r\n\t\t\"codigo\": 5,\r\n\t\t\"preco\": 10,\r\n\t\t\"estoque\": true,\r\n\t\t\"organico\": true,\r\n\t\t\"caracteristica\": \"sopão\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/alimenticios/incluir",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"alimenticios",
+								"incluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obterLista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/livros-digitais",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"livros-digitais"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alterar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"descricao\": \"new coca-cola\",\r\n    \"codigo\": 1,\r\n    \"preco\": 10.0,\r\n    \"estoque\": false,\r\n    \"organico\": false,\r\n    \"caracteristica\": \"new normal\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/alimenticios/alterar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"alimenticios",
+								"alterar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "livro-fisico",
+			"item": [
+				{
+					"name": "incluir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\t\"descricao\": \"sopa\",\r\n\t\t\"codigo\": 5,\r\n\t\t\"preco\": 10,\r\n\t\t\"estoque\": true,\r\n\t\t\"organico\": true,\r\n\t\t\"caracteristica\": \"sopão\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/alimenticios/incluir",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"alimenticios",
+								"incluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obterLista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/alimenticios",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"alimenticios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alterar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"descricao\": \"new coca-cola\",\r\n    \"codigo\": 1,\r\n    \"preco\": 10.0,\r\n    \"estoque\": false,\r\n    \"organico\": false,\r\n    \"caracteristica\": \"new normal\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/livros-fisicos/alterar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"livros-fisicos",
+								"alterar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
