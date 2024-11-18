@@ -1,10 +1,13 @@
-Como Executar
-Clone este repositório.
+# Projeto Final Arquitetura Java [24E4_2] - Cadastro de Bibliotecários e Publicações
+### Este projeto faz parte da disciplina de Arquitetura Java que realiza operações CRUD sobre Bibliotecários com suas respectivas publicações (Livros físicos e Livros Digitais). Um sistema básico utilizando Spring Boot.
 
-Certifique-se de que o Java 21 e o Maven estão instalados em sua máquina.
+# Como Executar
+  - Clone este repositório.
 
-Compile o projeto executando: mvn clean install
+  - Certifique-se de que o Java 21 e o Maven estão instalados em sua máquina.
 
-Execute o projeto com o comando: mvn spring-boot
+  - Compile o projeto executando: mvn clean install
 
-O sistema irá carregar os dados a partir do arquivo files/bibliotecarios.txt e exibir a lista de bibliotecarios e suas publicações no console.
+  - Execute o projeto com o comando: mvn spring-boot
+
+  - O sistema irá carregar os dados a partir do arquivo files/bibliotecarios.txt e exibir a lista de bibliotecarios e suas publicações no console.
